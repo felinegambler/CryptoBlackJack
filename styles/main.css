@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+    font-family: casino;
+    src: url('fonts/BebasNeue.woff');
+}
+body {
+  background-image: url('imgs/pool_table.png');
+  background-repeat: repeat;
+  overflow-x: hidden;
+}
+::selection {
+  background: #f2d17d;
+}
+::-moz-selection {
+  background: #f2d17d;
+}
+button:focus,button:active,input:focus {
+  outline: 0;
+}
+a {
+  color: #D3A632;
+}
+a:hover,a:focus {
+  color: #df691a;
+  text-decoration: none;
+}
+.menu {
+  color: #ffffff;
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 5px;
+}
+.menu:hover {
+  text-decoration: none;
+  /*color: #ffffff;*/
+}
+.all {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+.center {
+  width: 998px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.centering {
+  text-align: center;
+}
+.c0 {
+  height: 60px;
+  background-color: #343434;
+  color: #A0A0A0;
+  font-size: 16px;
+  border-bottom: 1px solid #E5B01D;
+  top: 0;
+  position: fixed;
+  z-index: 500;  
+}
+.c0 .logo {
+  font-size: 24px;
+  float: left;
+  padding-left: 65px;
+  background-image: url('imgs/yellow-notext.png');
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: left center;
+  color: #e8be4c;
+  display: inline-block;
+  line-height: 60px;
+  height: 60px;
+  text-transform: uppercase;
+  font-family: 'casino';
+}
+.c0 .logo .text {
+  position: relative;
+  top: 2px;
+}
+.c0 .logo:hover {
+  color: #d8c38a;
+}
+.c0-cashier {
+  padding: 8px;
+  font-family: Sans-Serif;
+  color: #eaddbe;
+  display: inline-block;
+  height: 60px;
+  float: right;
+}
+.cashier_block {
+  display: inline-block;
+  font-family: 'Lato';
+  float: left;
+}
+.refresher_b {
+  float: right;
+  width: 10px;
+  padding: 0;
+  position: relative;
+  top: 5px;
+}
+.withdrawBtn {
+  color: #eaddbe;
+  border: 1px dotted #D3A632;
+  margin-left: 8px;
+}
+.withdrawBtn:hover {
+  color: #FFFFFF;
+}
+.c1 {
+  text-align: left;
+}
+.c2 {
+  margin-top: 100px;
+}
+.cover {
+  width: 100%;
+  overflow: hidden;
+}
+.leftBox {
+  max-width: 240px;
+  height: 350px;
+  float: left;
+  position: absolute;
+}
+.leftMenu {
+  width: 40px;
+  height: 350px;
+  float: right;
+}
+.leftMenu a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 2px;
+  background-color: rgba(0,0,0,0.4);
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+.leftMenu a:first-child {
+  margin-top: 0;
+}
+.lm-olwaysOn {
+  color: #DF691A;
+}
+.chatBox {
+  width: 200px;
+  height: 340px;
+  float: left;
+  display: none;
+  background-color: rgba(0,0,0,0.3);
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+  padding: 5px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.mCSB_inside > .mCSB_container {
+  margin-right: 10px;
+}
+.chat-messages {
+  background-color: white;
+  color: #555B71;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  height: 90%;
+  font-size: 12px;
+  padding: 3px 0;
+}
+.chat-message {
+  width: 100%;
+  padding: 2% 5%;
+  text-align: left;
+}
+.chat-m-time {
+  color: gray;
+  display: inline;
+  float: right;
+}
+.chat-m-user {
+  font-weight: bold;
+  display: inline;
+}
+.chat-m-text {
+  display: block;
+  line-height: 11px;
+  padding-left: 2px;
+}
+.chat-input {
+  height: 8%;
+  margin-top: 2%;
+}
+.chat-input input {
+  height: 100%;
+  background-color: #fcfcfc;
+  border: 1px solid #fcfcfc;
+  padding: 5%;
+  width: 100%;
+  float: left;
+  display: inline-block;
+  color: black;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+.cj-table {
+  width: 100%;
+  height: 350px;
+}
+.gamblingTable {
+  width: 100%;
+  text-align: center;
+  height: 350px;
+  position: relative;
+}
+.bjinfo {
+  width: 100%;
+  position: relative;
+  top: 0;
+  z-index: 10;
+  float: left;
+}
+.bjinfo-text {
+  font-family: 'casino';
+  font-size: 27px;
+  color: rgba(52,52,52,0.8);
+  text-decoration: overline;
+}
+.bjinfo-image img {
+  width: 100px;
+  height: 75px;  
+}
+.cj-rivalTables {
+  position: absolute;
+  width: 748px;
+  height: 350px;
+  z-index: 20;
+  text-align: center;
+}
+.cj-dealerTable {
+  width: 748px;
+  height: 175px;
+}
+.cj-playerTable {
+  width: 748px;
+  height: 175px;
+  padding-top: 35px;
+}
+table.splitted {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+table.splitted tr td {
+  text-align: center;
+  width: 50%;
+}
+.cj-table-control {
+  height: 70px;
+  margin-top: 5px;
+  padding: 5px 0;
+  padding-top: 6px;
+  padding-bottom: 0;
+  display: inline-block;
+}
+.cj-leftMargin {
+  display: inline-block;
+}
+.cj-control-all {
+  border-top: 1px solid #E5B01D;
+  background-color: #343434;
+  height: 80px;
+}
+.cj-table-actions {
+  height: 60px;
+  width: 748px;
+  text-align: right;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.g_controls {
+  display: inline-block;
+  text-align: left;
+  float: left;
+  padding-top: 4px;
+}
+.betAmount {
+  display: inline-block;
+  height: 51px;
+  border: 1px solid #d8c38a;
+  border-left: none;
+  border-right: none;
+  position: relative;
+  top: 4px;
+  padding-left: 5px;
+}
+.betInput {
+  color: #eaddbe;
+  display: inline-block;
+  height: 49px;
+  width: 148px;
+  padding: 12px;
+  border: none;
+  background-color: transparent;
+  font-size: 22px;
+  position: relative;
+  bottom: 8px;
+}
+.betInput:focus,.betInput:active {
+  outline: 0;
+}
+.betUpdown {
+  display: inline-block;
+  height: 51px;
+  padding-top: 4px;
+  padding-right: 12px;
+}
+.betUpdown a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #e8be4c;
+  position: relative;
+  top: 0;
+}
+.betUpdown a:hover {
+  color: #d8c38a;
+}
+.betUpdown a.valdown {
+  position: relative;
+  right: 1px;
+}
+.betButton {
+  display: inline-block;
+  color: #3f3009;
+  position: relative;
+  bottom: 9px;
+}
+.betButton:hover {
+  color: #7a5d13;
+}
+.betRegulators {
+  width: 45px;
+  height: 49px;
+  display: inline-block;
+}
+.betRegulators a {
+  display: block;
+  height: 25px;
+  width: 100%;
+  padding: 0;
+  border-top: none;
+  position: relative;
+  top: 3px;
+}
+.btn.btn-disabled {
+  background-color: rgba(232,190,76,0.3);
+  border: 1px solid rgba(232,190,76,0.1);
+  color: rgba(63,48,9,1);
+}
+.stats {
+  background-color: #343434;
+}
+.captchadiv {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #E5B01D;
+  margin-left: 10px;
+}
+.captchadiv img {
+  width: 220px;
+  height: 50px;
+}
+.claimButton {
+  font-size: 16px;
+  height: 62px;
+  line-height: 30px;
+  width: 116px;
+}
+.captchaInput {
+  width: 360px;
+  text-transform: uppercase;
+}
+.modalReaction {
+  width: 57%;
+  height: 35px;
+  line-height: 35px;
+  float: right;
+  font-size: 13px;
+}
